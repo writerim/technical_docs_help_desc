@@ -189,3 +189,8 @@
 #### Постановка задачи
 
 ![](http://www.plantuml.com/plantuml/png/bP91JeOm48NtdA8Nu0B66Aw2aPrWWh27kj24XOaR4nDDZ1Teq4P0Mg_mvaPEowAAOdwMl9dlcu4XkQpIighpyoYjgukYpa-pCi83FZ10mv0KyOd0CmPgIN8oGuaZWNieVC9oct5jhbdW7OfkqMF24AqG9tdYfnwQfCzxpndgC3hX8nJpXWtNGMZ_8c3n2hjxm8iFtfYUUUimullQUcqzZl-nRdw79T0OT-lkgFEnua9OSecOkAAMBTGmVkEhwkUfsB-QkFtYK-2W3hpuH0qlA7zVEycAC_w7lW00)
+
+
+
+#### Постановка задачи через телефонию
+![](http://www.plantuml.com/plantuml/png/TP0z3e9048NxFSLUW0iOOxWAHZh11A47r5XGq5Xhy0He96nMVgxmvaQ-61inDZ3pvkNx0kuszg8u2TRAI-9Dc0HBFrAuei4JZUmne8UHKZiBZOfJ9Zbl7MezqxXWO52mQXdWpijD3h9xhv9fF52ZHyzA1wCnC8J1g2Oemd424uoKvdBaCwK0PrQif5BmRT2G04iWNID7qbabj-LGKc-v_6ePyrkuvgYdvhdpnroHttv0D7yvbEk7A_wo5m00)
