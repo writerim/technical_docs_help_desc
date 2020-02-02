@@ -188,4 +188,4 @@
 
 #### Постановка задачи
 
-![](http://www.plantuml.com/plantuml/png/SoWkIImgAStDuUAArefLqDMrKmWkIIn9DUI2K60He0oCQwLGaf5Ph014YGh59KMPUUbOPFBoIp9IYs3oC0Kmeusu81JSQ2w7rBmKe1C0)
+![](http://www.plantuml.com/plantuml/png/JSyz3i8m30NWtQVm1HYWFmC3wiG9k82RPAWKR2bn1suFhgdayUMJtekNhjHqVrUWfDBmANA5LNREr3wMRf24jKcrC41XtVI04J8fhTIBfGcIr5gIRiBT7cQmAhmyZXAyuqlmx8qqEFr7eemklXXXSZZd8yrEuIy0I-7yE_0B0)
