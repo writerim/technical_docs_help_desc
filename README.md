@@ -1,5 +1,9 @@
 # ТЗ
 
+![Страуткура БД](https://raw.githubusercontent.com/writerim/technical_docs_help_desc/master/Untitled%20Diagram.png)
+
+
+
 
 #### Установка
 ###### Интерфейс
