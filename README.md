@@ -1,9 +1,18 @@
 # ТЗ
 
-![Страуткура БД](https://raw.githubusercontent.com/writerim/technical_docs_help_desc/master/Untitled%20Diagram.png)
+## Структура БД
 
+![Страуткура БД](https://raw.githubusercontent.com/writerim/technical_docs_help_desc/master/Untitled%20Diagram.png)  
 
+## Шаблон
 
+[Предлагаемый шаблон](http://byrushan.com/projects/sf/1-1/index.html)
+
+* Большой набор готовых элементов
+* Простота интеграции
+* Простота изменения
+
+## Интерфейс и логика работы системы
 
 #### Установка
 ###### Интерфейс
