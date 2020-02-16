@@ -56,14 +56,14 @@
   * Сотрудники
     * [Список](#employee-list)
     * [Форма редакктирония/добавления](#employee-form)
-    * [Карточка](#employee-form)
+    * [Карточка](#employee-card)
   * Группы сотрудников
     * [Список](#employee-group-list)
     * [Форма редакктирония/добавления](#employee-group-form)
   * Контактные лица
     * [Список](#contact-list)
     * [Форма редакктирония/добавления](#contact-form)
-    * [Карточка](#contact-form)
+    * [Карточка](#contact-card)
   * Роли
     * [Список](#role-list)
     * [Форма редакктирония/добавления](#role-form)
@@ -80,7 +80,7 @@
   * Заявки
     * [Список](#request-list)
     * [Форма редакктирония/добавления](#request-form)
-    * [Карточка](#request-form)
+    * [Карточка](#request-card)
   * Маршрутизация заявки
     * [Список](#route-request-list)
     * [Форма редакктирония/добавления](#route-request--form)
@@ -101,7 +101,19 @@
   * [Интеграция с телефонией](#integration-ip-phone)
   * [Интеграция с 1С](#integration-1c)
 
-> Во всех списках должен присутствовать фильтр, по полям, которыми обладает модель  
+
+***Важно:***
+* Во всех списках должен присутствовать фильтр, по полям, которыми обладает модель  
+* Во всех списках есть постраничная навигация  
+* Во всех списках есть выбор показа определенной порции данных
+* При преходе со страницы этого списка будут сброшены фильтры, выбранная страница, выбранная порционность данных  
+* Если у пользователя нет права на просмотр какой либо страницы, он будет перенаправлен на страницу с ошибкой о том, что такая страница не существует
+* Если пользователь по каким либо причинам перестал быть авторизован в системе, он будет перенаправлен на страницу с авторизацией
+* Если в системе произошел какой либо сбой и система не может продолжить показывать эту страницу, то пользователь будет перенаправлен на страницу с извивнениями, оповещением о ошибке. Администратору будет выслано письмо с информацией об ошибке
+
+
+
+
 >
 > Фильтр по типу поля - Дата
 > | Условие фильтрации   |      Результат применения фильтра      | 
@@ -155,75 +167,92 @@
 
 
 
-
-
 #### <a name="auth"> </a>
 #### <a name="reqistration"> </a>
 #### <a name="forgot"> </a>
 #### <a name="about"> </a>
 
 
-#### <a name="company-list"> </a>
-#### <a name="company-form"> </a>
+#### <a name="company-list"> </a> Компании-Список
+  * Поиск по названию
+  * Кнопки
+    * Выгрузить
+    * Добавить компанию
+  * Строки
+	* Название
+	* Телефон
+	* Элетронная почта
+	* Отвественный менеджер
+	* Наблюдатели по умолчанию
+	* Дата создания
+
+
+#### <a name="company-form"> </a> Компании-Форма редактирования/добавления
+  * Название
+  * Категория клиента
+  * Ответственный менеджер
+  * Наблюдатели сотрудники
+  * Наблюдатели группы
+
 #### <a name="company-card"> </a>
 #### <a name="company-log"> </a>
-#### <a name="company-attr-list"> </a>
-#### <a name="company-attr-form"> </a>
-#### <a name="contract-list"> </a>
-#### <a name="contract-form"> </a>
-#### <a name="device-list"> </a>
-#### <a name="device-form"> </a>
+#### <a name="company-attr-list"> </a>Дополнительные аттрибуты компании-Список
+#### <a name="company-attr-form"> </a>Дополнительные аттрибуты компании-Форма редактирования/добавления
+#### <a name="contract-list"> </a>Контакты-Список
+#### <a name="contract-form"> </a>Контакты-Форма редактирования/добавления
+#### <a name="device-list"> </a>Оборудование-Список
+#### <a name="device-form"> </a>Оборудование-Форма редактирования/добавления
 #### <a name="device-log"> </a>
-#### <a name="device-attr-list"> </a>
-#### <a name="device-attr-form"> </a>
-#### <a name="device-model-list"> </a>
-#### <a name="device-model-form"> </a>
-#### <a name="device-manufactured-list"> </a>
-#### <a name="device-manufactured-form"> </a>
-#### <a name="device-type-list"> </a>
-#### <a name="device-type-form"> </a>
-#### <a name="offert-list"> </a>
-#### <a name="offert-form"> </a>
+#### <a name="device-attr-list"> </a>Дополнительные аттрибуты оборудования-Список
+#### <a name="device-attr-form"> </a>Дополнительные аттрибуты оборудования-Форма редактирования/добавления
+#### <a name="device-model-list"> </a>Модели обрудования-Список
+#### <a name="device-model-form"> </a>Модели обрудования-Форма редактирования/добавления
+#### <a name="device-manufactured-list"> </a>Производители обрудования-Список
+#### <a name="device-manufactured-form"> </a>Производители обрудования-Форма редактирования/добавления
+#### <a name="device-type-list"> </a>Типы обрудован-Список
+#### <a name="device-type-form"> </a>Типы обрудован-Форма редактирования/добавления
+#### <a name="offert-list"> </a>Договоры-Список
+#### <a name="offert-form"> </a>Договоры-Форма редактирования/добавления
 #### <a name="offert-card"> </a>
 #### <a name="offert-log"> </a>
-#### <a name="object-list"> </a>
-#### <a name="object-form"> </a>
-#### <a name="object-attr-list"> </a>
-#### <a name="object-attr-form"> </a>
-#### <a name="object-work-list"> </a>
-#### <a name="object-work-form"> </a>
-#### <a name="price-list"> </a>
-#### <a name="price-form"> </a>
-#### <a name="serices-list"> </a>
-#### <a name="serices-form"> </a>
-#### <a name="employee-list"> </a>
-#### <a name="employee-form"> </a>
-#### <a name="employee-form"> </a>
-#### <a name="employee-group-list"> </a>
-#### <a name="employee-group-form"> </a>
-#### <a name="contact-list"> </a>
-#### <a name="contact-form"> </a>
-#### <a name="contact-form"> </a>
-#### <a name="role-list"> </a>
-#### <a name="role-form"> </a>
-#### <a name="rule-list"> </a>
-#### <a name="rule-form"> </a>
-#### <a name="sla-list"> </a>
-#### <a name="sla-form"> </a>
+#### <a name="object-list"> </a>Объекты-Список
+#### <a name="object-form"> </a>ОбъектыФорма редактирования/добавления
+#### <a name="object-attr-list"> </a>Дополнительные аттрибуты объекта-Список
+#### <a name="object-attr-form"> </a>Дополнительные аттрибуты объекта-Форма редактирования/добавления
+#### <a name="object-work-list"> </a>Графики работ-Список
+#### <a name="object-work-form"> </a>Графики работ-Форма редактирования/добавления
+#### <a name="price-list"> </a>Услуги-Список
+#### <a name="price-form"> </a>Услуги-Форма редактирования/добавления
+#### <a name="serices-list"> </a>Сервисные пириоды-Список
+#### <a name="serices-form"> </a>Сервисные пириоды-Форма редактирования/добавления
+#### <a name="employee-list"> </a>Сотрудники-Список
+#### <a name="employee-form"> </a>Сотрудники-Форма редактирования/добавления
+#### <a name="employee-card"> </a>
+#### <a name="employee-group-list"> </a>Группы сотрудников-Список
+#### <a name="employee-group-form"> </a>Группы сотрудников-Форма редактирования/добавления
+#### <a name="contact-list"> </a>Контактные лица-Список
+#### <a name="contact-form"> </a>Контактные лица-Форма редактирования/добавления
+#### <a name="contact-card"> </a>
+#### <a name="role-list"> </a>Роли-Список
+#### <a name="role-form"> </a>Роли-Форма редактирования/добавления
+#### <a name="rule-list"> </a>Права-Список
+#### <a name="rule-form"> </a>Права-Форма редактирования/добавления
+#### <a name="sla-list"> </a>SLA-Список
+#### <a name="sla-form"> </a>SLA-Форма редактирования/добавления
 #### <a name="report-sla-list"> </a>
 #### <a name="report-reg-form"> </a>
 #### <a name="report-fast-form"> </a>
-#### <a name="request-list"> </a>
-#### <a name="request-form"> </a>
-#### <a name="request-form"> </a>
-#### <a name="route-request-list"> </a>
-#### <a name="route-request--form"> </a>
-#### <a name="type-request-list"> </a>
-#### <a name="type-request-form"> </a>
-#### <a name="status-request-list"> </a>
-#### <a name="status-request-form"> </a>
-#### <a name="priority-request-list"> </a>
-#### <a name="priority-request-form"> </a>
+#### <a name="request-list"> </a>Заявки-Список
+#### <a name="request-form"> </a>Заявки-Форма редактирования/добавления
+#### <a name="request-card"> </a>
+#### <a name="route-request-list"> </a>-Маршрутизация заявкиСписок
+#### <a name="route-request-form"> </a>Маршрутизация заявки-Форма редактирования/добавления
+#### <a name="type-request-list"> </a>Типы заявки-Список
+#### <a name="type-request-form"> </a>Типы заявки-Форма редактирования/добавления
+#### <a name="status-request-list"> </a>Статусы заявки-Список
+#### <a name="status-request-form"> </a>Статусы заявки-Форма редактирования/добавления
+#### <a name="priority-request-list"> </a>Приоритет заявки-Список
+#### <a name="priority-request-form"> </a>Приоритет заявки-Форма редактирования/добавления
 #### <a name="notification-form"> </a>
 #### <a name="main-settings"> </a>
 #### <a name="clint-portal"> </a>
