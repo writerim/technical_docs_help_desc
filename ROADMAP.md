@@ -101,76 +101,143 @@
   * [Интеграция с телефонией](#integration-ip-phone)
   * [Интеграция с 1С](#integration-1c)
 
+> Во всех списках должен присутствовать фильтр, по полям, которыми обладает модель  
+>
+> Фильтр по типу поля - Дата
+> | Условие фильтрации   |      Результат применения фильтра      | 
+> |----------|------|
+> | соответствует |  Все заявки, у которых в фильтруемом поле стоит выбранная дата |
+> | не соответствует |    Все заявки, кроме тех, у которых в фильтруемом поле стоит выбранная дата   |
+> | >= | Все заявки, в фильтруемом поле которых стоит дата соответствующая выбранной или более поздняя |
+> | <= | Все заявки, в фильтруемом поле которых стоит дата, соответствующая выбранной, или более ранняя|
+> | между | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+> | Сегодня | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+> | Вчера | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+> | Менее чем дней назад | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+> | Более чем дней назад | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+> | В прошлые дни | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+> | Дней назад | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+> | На этой неделе | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+> | Последняя неделя | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+> | Последние 2 неделя | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+> | Этот месяц | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+> | Последний месяц | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+> | Этот год | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+>
+>
+> Фильтр по тип поля - Другая модель
+> | Условие фильтрации   |      Результат применения фильтра      | 
+> |----------|------|
+> | соответствует |  Все заявки, у которых в фильтруемом поле стоит выбранная дата |
+> | не соответствует |    Все заявки, кроме тех, у которых в фильтруемом поле стоит выбранная дата   |
+> | Отсутствует | Все заявки, в фильтруемом поле которых стоит дата соответствующая выбранной или более поздняя |
+>
+>
+> Фильтр по тип поля - Число
+> | Условие фильтрации   |      Результат применения фильтра      | 
+> |----------|------|
+> | соответствует |  Все заявки, у которых в фильтруемом поле стоит выбранная дата |
+> | не соответствует |    Все заявки, кроме тех, у которых в фильтруемом поле стоит выбранная дата   |
+> | >= | Все заявки, в фильтруемом поле которых стоит дата соответствующая выбранной или более поздняя |
+> | <= | Все заявки, в фильтруемом поле которых стоит дата, соответствующая выбранной, или более ранняя|
+> | между | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+> | Отстутствует | Все заявки, у которых в фильтруемом поле стоит дата из выбранного диапазона |
+>
+>
+> Фильтр по тип поля - Да/Нет
+> | Условие фильтрации   |      Результат применения фильтра      | 
+> |----------|------|
+> | соответствует |  Все заявки, у которых в фильтруемом поле стоит выбранная дата |
+> | не соответствует |    Все заявки, кроме тех, у которых в фильтруемом поле стоит выбранная дата   |
+>
+>
+> Фильтр по тип поля - Цвет
+> | Условие фильтрации   |      Результат применения фильтра      | 
+> |----------|------|
+> | соответствует |  Все заявки, у которых в фильтруемом поле стоит выбранная дата |
+> | не соответствует |    Все заявки, кроме тех, у которых в фильтруемом поле стоит выбранная дата   |
+>
+>
+> Фильтр по тип поля - Текст
+> | Условие фильтрации   |      Результат применения фильтра      | 
+> |----------|------|
+> | содержит |  Все заявки, у которых в фильтруемом поле стоит выбранная дата |
+> | не содержит |    Все заявки, кроме тех, у которых в фильтруемом поле стоит выбранная дата   |
 
 
-#### <aname="auth"> </a>
-#### <aname="reqistration"> </a>
-#### <aname="forgot"> </a>
-#### <aname="about"> </a>
-#### <aname="company-list"> </a>
-#### <aname="company-form"> </a>
-#### <aname="company-card"> </a>
-#### <aname="company-log"> </a>
-#### <aname="company-attr-list"> </a>
-#### <aname="company-attr-form"> </a>
-#### <aname="contract-list"> </a>
-#### <aname="contract-form"> </a>
-#### <aname="device-list"> </a>
-#### <aname="device-form"> </a>
-#### <aname="device-log"> </a>
-#### <aname="device-attr-list"> </a>
-#### <aname="device-attr-form"> </a>
-#### <aname="device-model-list"> </a>
-#### <aname="device-model-form"> </a>
-#### <aname="device-manufactured-list"> </a>
-#### <aname="device-manufactured-form"> </a>
-#### <aname="device-type-list"> </a>
-#### <aname="device-type-form"> </a>
-#### <aname="offert-list"> </a>
-#### <aname="offert-form"> </a>
-#### <aname="offert-card"> </a>
-#### <aname="offert-log"> </a>
-#### <aname="object-list"> </a>
-#### <aname="object-form"> </a>
-#### <aname="object-attr-list"> </a>
-#### <aname="object-attr-form"> </a>
-#### <aname="object-work-list"> </a>
-#### <aname="object-work-form"> </a>
-#### <aname="price-list"> </a>
-#### <aname="price-form"> </a>
-#### <aname="serices-list"> </a>
-#### <aname="serices-form"> </a>
-#### <aname="employee-list"> </a>
-#### <aname="employee-form"> </a>
-#### <aname="employee-form"> </a>
-#### <aname="employee-group-list"> </a>
-#### <aname="employee-group-form"> </a>
-#### <aname="contact-list"> </a>
-#### <aname="contact-form"> </a>
-#### <aname="contact-form"> </a>
-#### <aname="role-list"> </a>
-#### <aname="role-form"> </a>
-#### <aname="rule-list"> </a>
-#### <aname="rule-form"> </a>
-#### <aname="sla-list"> </a>
-#### <aname="sla-form"> </a>
-#### <aname="report-sla-list"> </a>
-#### <aname="report-reg-form"> </a>
-#### <aname="report-fast-form"> </a>
-#### <aname="request-list"> </a>
-#### <aname="request-form"> </a>
-#### <aname="request-form"> </a>
-#### <aname="route-request-list"> </a>
-#### <aname="route-request--form"> </a>
-#### <aname="type-request-list"> </a>
-#### <aname="type-request-form"> </a>
-#### <aname="status-request-list"> </a>
-#### <aname="status-request-form"> </a>
-#### <aname="priority-request-list"> </a>
-#### <aname="priority-request-form"> </a>
-#### <aname="notification-form"> </a>
-#### <aname="main-settings"> </a>
-#### <aname="clint-portal"> </a>
-#### <aname="email-server"> </a>
-#### <aname="integration-ip-phone"> </a>
-#### <aname="integration-1c"> </a>
+
+
+
+#### <a name="auth"> </a>
+#### <a name="reqistration"> </a>
+#### <a name="forgot"> </a>
+#### <a name="about"> </a>
+
+
+#### <a name="company-list"> </a>
+#### <a name="company-form"> </a>
+#### <a name="company-card"> </a>
+#### <a name="company-log"> </a>
+#### <a name="company-attr-list"> </a>
+#### <a name="company-attr-form"> </a>
+#### <a name="contract-list"> </a>
+#### <a name="contract-form"> </a>
+#### <a name="device-list"> </a>
+#### <a name="device-form"> </a>
+#### <a name="device-log"> </a>
+#### <a name="device-attr-list"> </a>
+#### <a name="device-attr-form"> </a>
+#### <a name="device-model-list"> </a>
+#### <a name="device-model-form"> </a>
+#### <a name="device-manufactured-list"> </a>
+#### <a name="device-manufactured-form"> </a>
+#### <a name="device-type-list"> </a>
+#### <a name="device-type-form"> </a>
+#### <a name="offert-list"> </a>
+#### <a name="offert-form"> </a>
+#### <a name="offert-card"> </a>
+#### <a name="offert-log"> </a>
+#### <a name="object-list"> </a>
+#### <a name="object-form"> </a>
+#### <a name="object-attr-list"> </a>
+#### <a name="object-attr-form"> </a>
+#### <a name="object-work-list"> </a>
+#### <a name="object-work-form"> </a>
+#### <a name="price-list"> </a>
+#### <a name="price-form"> </a>
+#### <a name="serices-list"> </a>
+#### <a name="serices-form"> </a>
+#### <a name="employee-list"> </a>
+#### <a name="employee-form"> </a>
+#### <a name="employee-form"> </a>
+#### <a name="employee-group-list"> </a>
+#### <a name="employee-group-form"> </a>
+#### <a name="contact-list"> </a>
+#### <a name="contact-form"> </a>
+#### <a name="contact-form"> </a>
+#### <a name="role-list"> </a>
+#### <a name="role-form"> </a>
+#### <a name="rule-list"> </a>
+#### <a name="rule-form"> </a>
+#### <a name="sla-list"> </a>
+#### <a name="sla-form"> </a>
+#### <a name="report-sla-list"> </a>
+#### <a name="report-reg-form"> </a>
+#### <a name="report-fast-form"> </a>
+#### <a name="request-list"> </a>
+#### <a name="request-form"> </a>
+#### <a name="request-form"> </a>
+#### <a name="route-request-list"> </a>
+#### <a name="route-request--form"> </a>
+#### <a name="type-request-list"> </a>
+#### <a name="type-request-form"> </a>
+#### <a name="status-request-list"> </a>
+#### <a name="status-request-form"> </a>
+#### <a name="priority-request-list"> </a>
+#### <a name="priority-request-form"> </a>
+#### <a name="notification-form"> </a>
+#### <a name="main-settings"> </a>
+#### <a name="clint-portal"> </a>
+#### <a name="email-server"> </a>
+#### <a name="integration-ip-phone"> </a>
+#### <a name="integration-1c"> </a>
