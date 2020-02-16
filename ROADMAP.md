@@ -12,84 +12,95 @@
     * [Карточка редактирония](#company-card)
     * [Логи](#company-log)
   * Дополнительные аттрибуты компании
-  	* [Список](#company-list)
-    * [Форма редактирония/добавления](#company-form)
+  	* [Список](#company-attr-list)
+    * [Форма редактирония/добавления](#company-attr-form)
   * Контакты
     * [Список](#contract-list)
     * [Форма редактирония/добавления](#contract-form)
   * Оборудование
     * [Список](#device-list)
     * [Форма редактирония/добавления](#device-form)
-    * [Логи](#device-attrs)
+    * [Логи](#device-log)
   * Дополнительные аттрибуты оборудования
-    * [Список](#device-list)
-    * [Форма редактирония/добавления](#device-form)
+    * [Список](#device-attr-list)
+    * [Форма редактирония/добавления](#device-attr-form)
   * Модели обрудования
-    * [Список](#models-list)
-    * [Форма редактирония/добавления](#models-form)
+    * [Список](#device-model-list)
+    * [Форма редактирония/добавления](#device-model-form)
   * Производители обрудования
-    * [Список](#manufactured-list)
-    * [Форма редактирония/добавления](#manufactured-form)
+    * [Список](#device-manufactured-list)
+    * [Форма редактирония/добавления](#device-manufactured-form)
   * Типы обрудования
-    * [Список](#manufactured-list)
-    * [Форма редактирония/добавления](#manufactured-form)
+    * [Список](#device-type-list)
+    * [Форма редактирония/добавления](#device-type-form)
   * Договоры
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
-    * [Карточка договора](#manufactured-form)
-    * [Логи](#manufactured-form)
+    * [Список](#offert-list)
+    * [Форма редакктирония/добавления](#offert-form)
+    * [Карточка договора](#offert-card)
+    * [Логи](#offert-log)
   * Объекты
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
+    * [Список](#object-list)
+    * [Форма редакктирония/добавления](#object-form)
   * Дополнительные аттрибуты объекта
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
+    * [Список](#object-attr-list)
+    * [Форма редакктирония/добавления](#object-attr-form)
   * Графики работ
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
+    * [Список](#object-work-list)
+    * [Форма редакктирония/добавления](#object-work-form)
   * Услуги
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
+    * [Список](#price-list)
+    * [Форма редакктирония/добавления](#price-form)
   * Сервисные пириоды
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
+    * [Список](#serices-list)
+    * [Форма редакктирония/добавления](#serices-form)
   * Сотрудники
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
-    * [Карточка](#manufactured-form)
+    * [Список](#employee-list)
+    * [Форма редакктирония/добавления](#employee-form)
+    * [Карточка](#employee-form)
   * Группы сотрудников
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
+    * [Список](#employee-group-list)
+    * [Форма редакктирония/добавления](#employee-group-form)
+  * Контактные лица
+    * [Список](#contact-list)
+    * [Форма редакктирония/добавления](#contact-form)
+    * [Карточка](#contact-form)
   * Роли
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
+    * [Список](#role-list)
+    * [Форма редакктирония/добавления](#role-form)
+  * Права
+    * [Список](#rule-list)
+    * [Форма редакктирония/добавления](#rule-form)
   * SLA
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
+    * [Список](#sla-list)
+    * [Форма редакктирония/добавления](#sla-form)
   * Отчеты
-    * [SLA](#manufactured-list)
-    * [Регистрация заявок](#manufactured-form)
-    * [Оперативная информация](#manufactured-form)
+    * [SLA](#report-sla-list)
+    * [Регистрация заявок](#report-reg-form)
+    * [Оперативная информация](#report-fast-form)
   * Заявки
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
-    * [Карточка](#manufactured-form)
+    * [Список](#request-list)
+    * [Форма редакктирония/добавления](#request-form)
+    * [Карточка](#request-form)
   * Маршрутизация заявки
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
+    * [Список](#route-request-list)
+    * [Форма редакктирония/добавления](#route-request--form)
   * Типы заявки
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
+    * [Список](#type-request-list)
+    * [Форма редакктирония/добавления](#type-request-form)
   * Статусы заявки
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
+    * [Список](#status-request-list)
+    * [Форма редакктирония/добавления](#status-request-form)
   * Приоритет заявки
-  	* [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
+  	* [Список](#priority-request-list)
+    * [Форма редакктирония/добавления](#priority-request-form)
   * Оповещения
-  	* [По событию](#manufactured-form)
-  * Общие настройки
-  * Клиентский портал
-  * Почтовый сервер
-  * Интеграция с телефонией
-  * Интеграция с 1С
+  	* [По событию](#notification-form)
+  * [Общие настройки](#main-settings)
+  * [Клиентский портал](#clint-portal)
+  * [Почтовый сервер](#email-server)
+  * [Интеграция с телефонией](integration-ip-phone)
+  * [Интеграция с 1С](#integration-1c)
+
+
+
+#### <a name="auth"></a>
