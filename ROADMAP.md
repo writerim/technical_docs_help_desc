@@ -2,6 +2,7 @@
   * [Авторизация](#auth)
   * [Регистрация](#reqistration)
   * [Восстановление пароля](#forgot)
+  * Клиентский портал
 
 Внутренние страницы
   * [Страница с версией](#about)
@@ -43,10 +44,10 @@
   * Дополнительные аттрибуты объекта
     * [Список](#manufactured-list)
     * [Форма редакктирония/добавления](#manufactured-form)
-  * Услуги
+  * Графики работ
     * [Список](#manufactured-list)
     * [Форма редакктирония/добавления](#manufactured-form)
-  * Роли
+  * Услуги
     * [Список](#manufactured-list)
     * [Форма редакктирония/добавления](#manufactured-form)
   * Сервисные пириоды
@@ -59,6 +60,9 @@
   * Группы сотрудников
     * [Список](#manufactured-list)
     * [Форма редакктирония/добавления](#manufactured-form)
+  * Роли
+    * [Список](#manufactured-list)
+    * [Форма редакктирония/добавления](#manufactured-form)
   * SLA
     * [Список](#manufactured-list)
     * [Форма редакктирония/добавления](#manufactured-form)
@@ -66,9 +70,6 @@
     * [SLA](#manufactured-list)
     * [Регистрация заявок](#manufactured-form)
     * [Оперативная информация](#manufactured-form)
-  * Графики работ
-    * [Список](#manufactured-list)
-    * [Форма редакктирония/добавления](#manufactured-form)
   * Заявки
     * [Список](#manufactured-list)
     * [Форма редакктирония/добавления](#manufactured-form)
