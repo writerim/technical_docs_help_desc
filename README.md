@@ -136,8 +136,13 @@
   * Приоритет заявки
     * [Список](#priority-request-list)
     * [Форма редактирования/добавления](#priority-request-form)
+  * [Карта заявок](#mapping-request)
+  * [Сотрудники на карте](#mapping-employee)
+  * [ППР оборудования](#ppr-devices)
   * Оповещения
-    * [По событию](#notification-form)
+    * [По заявкам](#notification-by-request)
+    * [По договоров](#notification-by-contract)
+    * [По пользователям](#notification-by-user)
   * [Общие настройки](#main-settings)
   * [Клиентский портал](#clint-portal)
   * [Почтовый сервер](#email-server)
