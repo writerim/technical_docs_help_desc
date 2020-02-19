@@ -45,7 +45,7 @@
   * Клиентский портал
 
 Внутренние страницы
-  * [Страница с версией](#about) [Схема](/tree/master/sheme/end_work_time.png)
+  * [Страница с версией](#about) [Схема](/sheme/end_work_time.png)
   * [Уровни видимости](#lvl-views)
   * Компании
     * [Список](#company-list)
