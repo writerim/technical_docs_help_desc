@@ -1,0 +1,680 @@
+@startuml
+
+
+
+package "comment_specification" <<Rectangle>> {
+
+	object comment_specification {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *CommentSpecification
+		 +Add(*CommentSpecification) *CommentSpecification
+		 +Update(*CommentSpecification) *CommentSpecification
+		 +Delete(key string)
+		 +All() []*CommentSpecification
+		 +Init(*sql.DB , bool)
+		 +New() *CommentSpecification
+	}
+
+	object CommentSpecification {
+	 +Save() *CommentSpecification
+	 +Delete() *CommentSpecification
+	}
+}
+
+
+
+package "company" <<Rectangle>> {
+
+	object company {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *Company
+		 +Add(*Company) *Company
+		 +Update(*Company) *Company
+		 +Delete(key string)
+		 +All() []*Company
+		 +Init(*sql.DB , bool)
+		 +New() *Company
+	}
+
+	object Company {
+	 +Save() *Company
+	 +Delete() *Company
+	}
+}
+
+
+
+package "company_type" <<Rectangle>> {
+
+	object company_type {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *CompanyType
+		 +Add(*CompanyType) *CompanyType
+		 +Update(*CompanyType) *CompanyType
+		 +Delete(key string)
+		 +All() []*CompanyType
+		 +Init(*sql.DB , bool)
+		 +New() *CompanyType
+	}
+
+	object CompanyType {
+	 +Save() *CompanyType
+	 +Delete() *CompanyType
+	}
+}
+
+
+
+package "contract" <<Rectangle>> {
+
+	object contract {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *Contract
+		 +Add(*Contract) *Contract
+		 +Update(*Contract) *Contract
+		 +Delete(key string)
+		 +All() []*Contract
+		 +Init(*sql.DB , bool)
+		 +New() *Contract
+	}
+
+	object Contract {
+	 +Save() *Contract
+	 +Delete() *Contract
+	}
+}
+
+
+
+package "contract_file" <<Rectangle>> {
+
+	object contract_file {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *ContractFile
+		 +Add(*ContractFile) *ContractFile
+		 +Update(*ContractFile) *ContractFile
+		 +Delete(key string)
+		 +All() []*ContractFile
+		 +Init(*sql.DB , bool)
+		 +New() *ContractFile
+	}
+
+	object ContractFile {
+	 +Save() *ContractFile
+	 +Delete() *ContractFile
+	}
+}
+
+
+
+package "price" <<Rectangle>> {
+
+	object price {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *Price
+		 +Add(*Price) *Price
+		 +Update(*Price) *Price
+		 +Delete(key string)
+		 +All() []*Price
+		 +Init(*sql.DB , bool)
+		 +New() *Price
+	}
+
+	object Price {
+	 +Save() *Price
+	 +Delete() *Price
+	}
+}
+
+
+
+package "request" <<Rectangle>> {
+
+	object request {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *Request
+		 +Add(*Request) *Request
+		 +Update(*Request) *Request
+		 +Delete(key string)
+		 +All() []*Request
+		 +Init(*sql.DB , bool)
+		 +New() *Request
+	}
+
+	object Request {
+	 +Save() *Request
+	 +Delete() *Request
+	}
+}
+
+
+
+package "request_comment" <<Rectangle>> {
+
+	object request_comment {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *RequestComment
+		 +Add(*RequestComment) *RequestComment
+		 +Update(*RequestComment) *RequestComment
+		 +Delete(key string)
+		 +All() []*RequestComment
+		 +Init(*sql.DB , bool)
+		 +New() *RequestComment
+	}
+
+	object RequestComment {
+	 +Save() *RequestComment
+	 +Delete() *RequestComment
+	}
+}
+
+
+
+package "request_done" <<Rectangle>> {
+
+	object request_done {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *RequestDone
+		 +Add(*RequestDone) *RequestDone
+		 +Update(*RequestDone) *RequestDone
+		 +Delete(key string)
+		 +All() []*RequestDone
+		 +Init(*sql.DB , bool)
+		 +New() *RequestDone
+	}
+
+	object RequestDone {
+	 +Save() *RequestDone
+	 +Delete() *RequestDone
+	}
+}
+
+
+
+package "request_mode_reg" <<Rectangle>> {
+
+	object request_mode_reg {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *RequestModeReg
+		 +Add(*RequestModeReg) *RequestModeReg
+		 +Update(*RequestModeReg) *RequestModeReg
+		 +Delete(key string)
+		 +All() []*RequestModeReg
+		 +Init(*sql.DB , bool)
+		 +New() *RequestModeReg
+	}
+
+	object RequestModeReg {
+	 +Save() *RequestModeReg
+	 +Delete() *RequestModeReg
+	}
+}
+
+
+
+package "request_priority" <<Rectangle>> {
+
+	object request_priority {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *RequestPriority
+		 +Add(*RequestPriority) *RequestPriority
+		 +Update(*RequestPriority) *RequestPriority
+		 +Delete(key string)
+		 +All() []*RequestPriority
+		 +Init(*sql.DB , bool)
+		 +New() *RequestPriority
+	}
+
+	object RequestPriority {
+	 +Save() *RequestPriority
+	 +Delete() *RequestPriority
+	}
+}
+
+
+
+package "request_status" <<Rectangle>> {
+
+	object request_status {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *RequestStatus
+		 +Add(*RequestStatus) *RequestStatus
+		 +Update(*RequestStatus) *RequestStatus
+		 +Delete(key string)
+		 +All() []*RequestStatus
+		 +Init(*sql.DB , bool)
+		 +New() *RequestStatus
+	}
+
+	object RequestStatus {
+	 +Save() *RequestStatus
+	 +Delete() *RequestStatus
+	}
+}
+
+
+
+package "request_to_request" <<Rectangle>> {
+
+	object request_to_request {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *RequestToRequest
+		 +Add(*RequestToRequest) *RequestToRequest
+		 +Update(*RequestToRequest) *RequestToRequest
+		 +Delete(key string)
+		 +All() []*RequestToRequest
+		 +Init(*sql.DB , bool)
+		 +New() *RequestToRequest
+	}
+
+	object RequestToRequest {
+	 +Save() *RequestToRequest
+	 +Delete() *RequestToRequest
+	}
+}
+
+
+
+package "request_type" <<Rectangle>> {
+
+	object request_type {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *RequestType
+		 +Add(*RequestType) *RequestType
+		 +Update(*RequestType) *RequestType
+		 +Delete(key string)
+		 +All() []*RequestType
+		 +Init(*sql.DB , bool)
+		 +New() *RequestType
+	}
+
+	object RequestType {
+	 +Save() *RequestType
+	 +Delete() *RequestType
+	}
+}
+
+
+
+package "settings" <<Rectangle>> {
+
+	object settings {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *Settings
+		 +Add(*Settings) *Settings
+		 +Update(*Settings) *Settings
+		 +Delete(key string)
+		 +All() []*Settings
+		 +Init(*sql.DB , bool)
+		 +New() *Settings
+	}
+
+	object Settings {
+	 +Save() *Settings
+	 +Delete() *Settings
+	}
+}
+
+
+
+package "specification" <<Rectangle>> {
+
+	object specification {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *Specification
+		 +Add(*Specification) *Specification
+		 +Update(*Specification) *Specification
+		 +Delete(key string)
+		 +All() []*Specification
+		 +Init(*sql.DB , bool)
+		 +New() *Specification
+	}
+
+	object Specification {
+	 +Save() *Specification
+	 +Delete() *Specification
+	}
+}
+
+
+
+package "store_company" <<Rectangle>> {
+
+	object store_company {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *StoreCompany
+		 +Add(*StoreCompany) *StoreCompany
+		 +Update(*StoreCompany) *StoreCompany
+		 +Delete(key string)
+		 +All() []*StoreCompany
+		 +Init(*sql.DB , bool)
+		 +New() *StoreCompany
+	}
+
+	object StoreCompany {
+	 +Save() *StoreCompany
+	 +Delete() *StoreCompany
+	}
+}
+
+
+
+package "store_log" <<Rectangle>> {
+
+	object store_log {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *StoreLog
+		 +Add(*StoreLog) *StoreLog
+		 +Update(*StoreLog) *StoreLog
+		 +Delete(key string)
+		 +All() []*StoreLog
+		 +Init(*sql.DB , bool)
+		 +New() *StoreLog
+	}
+
+	object StoreLog {
+	 +Save() *StoreLog
+	 +Delete() *StoreLog
+	}
+}
+
+
+
+package "store_object" <<Rectangle>> {
+
+	object store_object {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *StoreObject
+		 +Add(*StoreObject) *StoreObject
+		 +Update(*StoreObject) *StoreObject
+		 +Delete(key string)
+		 +All() []*StoreObject
+		 +Init(*sql.DB , bool)
+		 +New() *StoreObject
+	}
+
+	object StoreObject {
+	 +Save() *StoreObject
+	 +Delete() *StoreObject
+	}
+}
+
+
+
+package "store_user" <<Rectangle>> {
+
+	object store_user {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *StoreUser
+		 +Add(*StoreUser) *StoreUser
+		 +Update(*StoreUser) *StoreUser
+		 +Delete(key string)
+		 +All() []*StoreUser
+		 +Init(*sql.DB , bool)
+		 +New() *StoreUser
+	}
+
+	object StoreUser {
+	 +Save() *StoreUser
+	 +Delete() *StoreUser
+	}
+}
+
+
+
+package "user" <<Rectangle>> {
+
+	object user {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *User
+		 +Add(*User) *User
+		 +Update(*User) *User
+		 +Delete(key string)
+		 +All() []*User
+		 +Init(*sql.DB , bool)
+		 +New() *User
+	}
+
+	object User {
+	 +Save() *User
+	 +Delete() *User
+	}
+}
+
+
+
+package "user_app" <<Rectangle>> {
+
+	object user_app {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *UserApp
+		 +Add(*UserApp) *UserApp
+		 +Update(*UserApp) *UserApp
+		 +Delete(key string)
+		 +All() []*UserApp
+		 +Init(*sql.DB , bool)
+		 +New() *UserApp
+	}
+
+	object UserApp {
+	 +Save() *UserApp
+	 +Delete() *UserApp
+	}
+}
+
+
+
+package "user_app_history" <<Rectangle>> {
+
+	object user_app_history {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *UserAppHistory
+		 +Add(*UserAppHistory) *UserAppHistory
+		 +Update(*UserAppHistory) *UserAppHistory
+		 +Delete(key string)
+		 +All() []*UserAppHistory
+		 +Init(*sql.DB , bool)
+		 +New() *UserAppHistory
+	}
+
+	object UserAppHistory {
+	 +Save() *UserAppHistory
+	 +Delete() *UserAppHistory
+	}
+}
+
+
+
+package "user_forgot" <<Rectangle>> {
+
+	object user_forgot {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *UserForgot
+		 +Add(*UserForgot) *UserForgot
+		 +Update(*UserForgot) *UserForgot
+		 +Delete(key string)
+		 +All() []*UserForgot
+		 +Init(*sql.DB , bool)
+		 +New() *UserForgot
+	}
+
+	object UserForgot {
+	 +Save() *UserForgot
+	 +Delete() *UserForgot
+	}
+}
+
+
+
+package "user_notification" <<Rectangle>> {
+
+	object user_notification {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *UserNotification
+		 +Add(*UserNotification) *UserNotification
+		 +Update(*UserNotification) *UserNotification
+		 +Delete(key string)
+		 +All() []*UserNotification
+		 +Init(*sql.DB , bool)
+		 +New() *UserNotification
+	}
+
+	object UserNotification {
+	 +Save() *UserNotification
+	 +Delete() *UserNotification
+	}
+}
+
+
+
+package "user_notification_done" <<Rectangle>> {
+
+	object user_notification_done {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *UserNotificationDone
+		 +Add(*UserNotificationDone) *UserNotificationDone
+		 +Update(*UserNotificationDone) *UserNotificationDone
+		 +Delete(key string)
+		 +All() []*UserNotificationDone
+		 +Init(*sql.DB , bool)
+		 +New() *UserNotificationDone
+	}
+
+	object UserNotificationDone {
+	 +Save() *UserNotificationDone
+	 +Delete() *UserNotificationDone
+	}
+}
+
+
+
+package "user_settings" <<Rectangle>> {
+
+	object user_settings {
+		 #_cache
+		 #NAME_TABLE
+		 #DB
+		 #TimeFormat string
+		 ~unique([]int) []int
+		 +GetById(id int) *UserSettings
+		 +Add(*UserSettings) *UserSettings
+		 +Update(*UserSettings) *UserSettings
+		 +Delete(key string)
+		 +All() []*UserSettings
+		 +Init(*sql.DB , bool)
+		 +New() *UserSettings
+	}
+
+	object UserSettings {
+	 +Save() *UserSettings
+	 +Delete() *UserSettings
+	}
+}
+
+
+
+@enduml
